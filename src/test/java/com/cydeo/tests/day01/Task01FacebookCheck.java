@@ -18,17 +18,17 @@ Expected: “Facebook – log in or sign up”
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-//2. Go to https://www.facebook.com
+//2.
+// Go to https://www.facebook.com
        driver.get("https://www.facebook.com");
-
-
-
-
-
-
-
-
-
+       String actualTitle = driver.getTitle();
+       if (actualTitle.equals("Facebook - log in or sign up")){
+       System.out.println("PASSED!");
+       }else {
+        System.out.println("FAILED!");
+       }
+     //   System.out.println("actualTitle = " + actualTitle);
+driver.close();
 
     }
 }
