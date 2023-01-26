@@ -77,6 +77,10 @@ driver.navigate().back(); //to facebook
         wait(3000);
   //Navigate forward: Verify url contains google
   driver.navigate().forward();
+  wait(3000);
+driver.close();
+
+
 
 
     }
