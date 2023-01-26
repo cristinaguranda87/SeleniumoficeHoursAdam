@@ -15,8 +15,8 @@ Expected: “Facebook – log in or sign up”
   */
 
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        WebDriver driver = new ChromeDriver();//polymorphism
+        driver.manage().window().maximize();// method chaining
 
 //2.
 // Go to https://www.facebook.com
