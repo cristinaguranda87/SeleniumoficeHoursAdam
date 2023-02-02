@@ -47,25 +47,30 @@ You do not have permission to send messages in this channel.
     }
 
     @Test
-    public void verifyHomePage() {
+    public void verifyAccounInfo() {
+    }
+
+    @Test
+       public void verifyHomePage() {
         BrowserUtils.verifyContainTitle(driver, "Automation Exercise");
     }
 
-
     @Test
-    public void testName() {// Click on 'Signup / Login' button
+        public void testName() {// Click on 'Signup / Login' button
         clicModule("Signup / Login"); //I used my utilitymethod
 //Verify 'New User Signup!' is visible
         WebElement labelForSignUp =driver.findElement(By.xpath("//h2[.='New User Signup!']"));
         Assert.assertTrue(labelForSignUp.isDisplayed());
     }
 
+
+
     @AfterMethod
-    public void tearDown() {
+        public void tearDown() {
         driver.close();
     }
 //I CREATE A METHOD FOR CLICKING ON BUTTONS
-    private void clicModule(String modulName) {
+        private void clicModule(String modulName) {
         String locator = "//a[contains(.,'" + modulName + "')]";
         driver.findElement(By.xpath(locator)).click();
     }
