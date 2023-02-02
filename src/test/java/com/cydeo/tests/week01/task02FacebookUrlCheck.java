@@ -1,6 +1,5 @@
-package com.cydeo.tests.day01;
+package com.cydeo.tests.week01;
 
-import com.google.common.base.Verify;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
