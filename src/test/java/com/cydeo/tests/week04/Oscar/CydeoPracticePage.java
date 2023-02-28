@@ -15,6 +15,8 @@ public abstract class CydeoPracticePage {
 @FindBy(linkText = "Home")
 public WebElement homeLink;
 
+
+
 public void clickOption(String optionText){
 Driver.getDriver().findElement(By.partialLinkText(optionText)).click();
 
